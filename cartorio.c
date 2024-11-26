@@ -123,11 +123,12 @@
 		
 	  setlocale(LC_ALL, "Portuguese"); //definir a linguagem
 	
-  	  printf("### Cartório da EBAC ###\n\n");	//inicio do menu
-	  printf("Escolha a opção desejada do menu:\n\n");
-	  printf("\t1 - Registrar nomes\n" );
-	  printf("\t2 - Consultar nomes\n"); 
-	  printf("\t3 - Deletar nomes\n\n");  
+  	  printf("\n\nCARTÓRIO DA EBAC \n\n");	//inicio do menu
+	  printf(" Escolha a opção desejada do menu:\n\n");
+	  printf("  1 - Registrar nomes\n" );
+	  printf("  2 - Consultar nomes\n"); 
+	  printf("  3 - Deletar nomes\n"); 
+	  printf("  4 - Sair do sistema\n\n");
    	  printf("Opção: "); //fim do menu
 	
 	  scanf("%d", &opcao); //armazenando a escolha do usuario
@@ -149,6 +150,11 @@
 		case 3:
 		deletar();
 		system("pause");
+		break;
+		
+		case 4:
+		printf("\n\n Obrigado por ultilizar o nosso sistema <3\n\n");
+		return 0;
 		break;
 		
 		default:
